@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Личный кабинет | IceGear</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e9eef5;
+      margin: 0;
+    }
+    .header {
+      background: #3b4b7a;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header nav {
+      display: flex;
+      gap: 30px;
+    }
+    .header nav a {
+      color: white;
+      text-decoration: none;
+    }
+    .header nav a:hover {
+      text-decoration: underline;
+    }
+    
+    .header-bar {
+    position: relative;
+    width: 100%;
+    
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px #0001;
+      padding: 30px;
+    }
+    h2 {
+      color: #3b4b7a;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, button {
+      font-size: 1em;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #c0c7d6;
+    }
+    button {
+      background: #23a2f2;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background .2s;
+    }
+    button:hover {
+      background: #1e88c9;
+    }
+    .hint {
+      font-size: 0.92em;
+      color: #999;
+      margin-top: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span style="font-size: 2em; font-weight: bold; color: #23a2f2;">IceGear</span>
+    <nav>
+      <a href="icegear.html">На главную</a>
+      <a href="reviews.html">отзывы</a>
+      <a href="about.html">о нас</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <h2>Регистрация</h2>
+    <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+      <input type="text" name="Имя" placeholder="Ваше имя" required />
+      <input type="email" name="Email" placeholder="Электронная почта" required />
+      <input type="password" name="Пароль" placeholder="Пароль" required />
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+    <div class="hint">
+      После регистрации с вами свяжется оператор для подтверждения аккаунта.<br>
+      Уже зарегистрированы? <a href="#">Войти</a>
+    </div>
+  </div>
+</body>
+</html>
